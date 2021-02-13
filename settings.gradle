@@ -1,0 +1,9 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+rootProject.name = "SocialLibs"
+include ':app'
+include ':textrepeater'

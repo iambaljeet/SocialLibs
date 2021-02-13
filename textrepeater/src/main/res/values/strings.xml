@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="repeating_text_notification_channel_id">125</string>
+    <string name="tepeating_text_notification_channel_name">Repeating Text Notifier</string>
+    <string name="repeat_notification_title">Repeating</string>
+    <string name="repeat_notification_description">Please wait.....</string>
+</resources>
