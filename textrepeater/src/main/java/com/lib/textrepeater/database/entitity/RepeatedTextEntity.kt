@@ -1,4 +1,4 @@
-package com.lib.database.entitity
+package com.lib.textrepeater.database.entitity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

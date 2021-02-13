@@ -5,9 +5,9 @@ import android.content.Context
 import android.content.ServiceConnection
 import android.os.IBinder
 import androidx.lifecycle.LiveData
-import com.lib.database.dao.RepeatedTextDao
-import com.lib.database.database.RepeatedTextDatabase
-import com.lib.database.entitity.RepeatedTextEntity
+import com.lib.textrepeater.database.dao.RepeatedTextDao
+import com.lib.textrepeater.database.database.RepeatedTextDatabase
+import com.lib.textrepeater.database.entitity.RepeatedTextEntity
 import com.lib.textrepeater.callback.TextRepeaterServiceCallback
 import com.lib.textrepeater.service.RepeatTextForegroundService
 import kotlinx.coroutines.Dispatchers

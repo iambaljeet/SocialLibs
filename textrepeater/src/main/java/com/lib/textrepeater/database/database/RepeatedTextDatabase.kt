@@ -1,11 +1,11 @@
-package com.lib.database.database
+package com.lib.textrepeater.database.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.lib.database.dao.RepeatedTextDao
-import com.lib.database.entitity.RepeatedTextEntity
+import com.lib.textrepeater.database.dao.RepeatedTextDao
+import com.lib.textrepeater.database.entitity.RepeatedTextEntity
 
 @Database(entities = [RepeatedTextEntity::class], version = 1)
 abstract class RepeatedTextDatabase: RoomDatabase() {
