@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="whatsapp_url"><![CDATA[\"https://api.whatsapp.com/send?phone=%s&text=%s\"]]></string>
+</resources>

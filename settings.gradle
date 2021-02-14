@@ -7,3 +7,5 @@ dependencyResolutionManagement {
 rootProject.name = "SocialLibs"
 include ':app'
 include ':textrepeater'
+include ':whatsapptools'
+include ':instatools'

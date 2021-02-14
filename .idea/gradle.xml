@@ -11,7 +11,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/instatools" />
             <option value="$PROJECT_DIR$/textrepeater" />
+            <option value="$PROJECT_DIR$/whatsapptools" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
