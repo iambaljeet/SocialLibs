@@ -17,26 +17,9 @@ class MainActivity : AppCompatActivity() {
                     startActivity(Intent(this, InstaTools::class.java))
                 }
 
-//        textRepeater = TextRepeater.Builder(this)
-//            .setTextToRepeat("How are you")
-//            .setRepeatLimit(200000)
-//            .setAddSpaceEnabled(false)
-//            .setNewLineEnabled(true)
-//            .setTextRepeaterServiceCallback(object: TextRepeaterServiceCallback {
-//                override fun textRepeatingListener(repeatedTextLiveData: MutableLiveData<String>) {
-//                    repeatedTextLiveData.observe(this@MainActivity) { repeatedText ->
-//                        findViewById<TextView>(R.id.text_view_repeated_text).apply {
-//                            text = repeatedText
-//                        }
-//                    }
-//                }
-//            })
-//            .build()
-//
-//        textRepeater.repeatText()
-//
-//        textRepeater.getHistoryOfTexts().observe(this) { repeatedText ->
-//            Log.d(TAG, "getHistoryOfTexts: repeatedText: $repeatedText")
-//        }
+        findViewById<AppCompatButton>(R.id.button_textrepeater)
+            .setOnClickListener {
+                startActivity(Intent(this, TextRepeater::class.java))
+            }
     }
 }
