@@ -16,9 +16,9 @@ class TextRepeater : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_repeater)
 
-        findViewById<AppCompatButton>(R.id.edit_text_message).setOnClickListener {
-            val text = findViewById<AppCompatEditText>(R.id.button_repeat).text.toString()
-            textRepeater.repeatText(text, 200000, false, true)
+        findViewById<AppCompatButton>(R.id.button_repeat).setOnClickListener {
+            val text = findViewById<AppCompatEditText>(R.id.edit_text_message).text.toString()
+            textRepeater.repeatText(text, 20000, false, true)
         }
 
         textRepeater = TextRepeater.Builder()
@@ -31,5 +31,10 @@ class TextRepeater : AppCompatActivity() {
                 }
             })
             .build()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        textRepeater.destroy()
     }
 }

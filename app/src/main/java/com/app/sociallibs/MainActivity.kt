@@ -4,11 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import com.lib.textrepeater.repeater.TextRepeater
 
 private const val TAG = "MainActivity"
 class MainActivity : AppCompatActivity() {
-    lateinit var textRepeater: TextRepeater
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,10 +38,5 @@ class MainActivity : AppCompatActivity() {
 //        textRepeater.getHistoryOfTexts().observe(this) { repeatedText ->
 //            Log.d(TAG, "getHistoryOfTexts: repeatedText: $repeatedText")
 //        }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-//        textRepeater.destroy()
     }
 }
