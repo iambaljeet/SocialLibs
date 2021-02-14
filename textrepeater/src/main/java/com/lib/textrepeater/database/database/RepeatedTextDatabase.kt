@@ -16,8 +16,8 @@ abstract class RepeatedTextDatabase: RoomDatabase() {
         @Volatile private var instance: RepeatedTextDatabase? = null
         private val Lock = Any()
 
-        operator fun invoke(context: Context) = instance ?: synchronized(Lock) {
-            instance ?: buildDatabase(context).also { instance = it }
+        operator fun invoke(context: Context?) = instance ?: synchronized(Lock) {
+            instance ?: context?.let { context -> buildDatabase(context).also { db -> instance = db } }
         }
 
         private fun buildDatabase(context: Context) = Room.databaseBuilder(context,
